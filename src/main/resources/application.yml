@@ -1,3 +1,9 @@
 server:
   servlet:
     context-path: /myretail
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://root:rootpassword@localhost:27017/myretail
+      database: myretail
