@@ -3,21 +3,24 @@ db = conn.getDB("MyRetailDB");
 
 db.products.insertMany([
     {
-        name: 'Book1',
-        price: '5.5',
-        currency_code: 'USD',
-        description: ''
+        _id: 123456,
+        current_price: {
+            value: 15.55,
+            currency_code: 'USD'
+        }
     },
     {
-        name: 'Book2',
-        price: '70',
-        currency_code: 'USD',
-        description: ''
+        _id: 345678,
+        current_price: {
+            value: 100,
+            currency_code: 'USD'
+        }
     },
     {
-        name: 'Book3',
-        price: '100',
-        currency_code: 'USD',
-        description: ''
+        _id: 890674,
+        current_price: {
+            value: 120.56,
+            currency_code: 'USD'
+        }
     },
 ]);

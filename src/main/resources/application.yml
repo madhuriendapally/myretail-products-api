@@ -5,5 +5,9 @@ server:
 spring:
   data:
     mongodb:
-      uri: mongodb://root:rootpassword@localhost:27017/MyRetailDB
+      host: localhost
+      port: 27017
+      authentication-database: admin
+      username: root
+      password: rootpassword
       database: MyRetailDB
