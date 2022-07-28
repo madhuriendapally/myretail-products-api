@@ -48,3 +48,6 @@ You should now be able to bring up the swagger url http://localhost:8080/myretai
 * If the product is not found then the request returns a 404 - http://localhost:8080/myretail/api/v1/products/1234
 response: 
 * ```{"id":"970693b9-4154-430b-872e-50e69d7ade59","message":"The product: 1234 is not found"}```
+
+### Actuator Health check
+http://localhost:8081/actuator/health

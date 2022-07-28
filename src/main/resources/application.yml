@@ -6,6 +6,10 @@ server:
     include-binding-errors: always
     include-exception: false
 
+management:
+  server:
+    port: 8081
+
 spring:
   data:
     mongodb:
