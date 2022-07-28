@@ -16,7 +16,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
     "data"
 })
 @Generated("jsonschema2pojo")
-public class Example {
+public class ProductResponseEntity {
 
     @JsonProperty("data")
     public Data data;

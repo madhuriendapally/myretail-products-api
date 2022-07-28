@@ -14,6 +14,6 @@ public class ProductDBIntegrationService {
     private final ProductsRepository productsRepository;
 
     public Products getProductById(Long id) {
-        return productsRepository.findById(id).orElseThrow(() -> new ProductNotFoundException("The product: [" + id + "] is currently unavailable"));
+        return productsRepository.findById(id).orElseThrow(() -> new ProductNotFoundException(id));
     }
 }

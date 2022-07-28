@@ -2,8 +2,8 @@ package myretail.products.api.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import myretail.products.api.generated.redsky.Data;
 import myretail.products.api.generated.redsky.Product;
+import myretail.products.api.generated.redsky.ProductResponseEntity;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -29,14 +29,14 @@ public class RedskyIntegrationService {
 
     public Product getProductById(Long id) {
         try {
-            ResponseEntity<Data> responseEntity = redskyWebClient.get()
+            ResponseEntity<ProductResponseEntity> responseEntity = redskyWebClient.get()
                     .uri(uriBuilder -> uriBuilder
                             .queryParam("key", redskyAuthKey)
                             .queryParam("tcin", id)
                             .build())
-                    .retrieve().toEntity(Data.class).block();
+                    .retrieve().toEntity(ProductResponseEntity.class).block();
             if (responseEntity != null && responseEntity.getBody() != null) {
-                return responseEntity.getBody().product;
+                return responseEntity.getBody().data.product;
             }
         } catch (Exception e) {
             //For now taking no further action then logging it. Possible actions could be to throw an exception.
