@@ -43,6 +43,7 @@ You should now be able to bring up the swagger url http://localhost:8080/myretai
 ```
 {"id":13860428,"name":"The Big Lebowski (Blu-ray)","current_price":{"value":138.56,"currency_code":"USD"}}
 ```
+![swagger-products-request](/images/swagger-product-details.png)
 * Other sample product id's available in the DB - 123456, 23456, 890674. These product's since not available as part of redsky service will not have the name value.
 * If the product is not found then the request returns a 404
 ex: http://localhost:8080/myretail/api/v1/products/1234
