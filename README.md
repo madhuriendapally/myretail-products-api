@@ -45,7 +45,6 @@ You should now be able to bring up the swagger url http://localhost:8080/myretai
 ```
 ![swagger-products-request](/images/swagger-product-details.png)
 * Other sample product id's available in the DB - 123456, 23456, 890674. These product's since not available as part of redsky service will not have the name value.
-* If the product is not found then the request returns a 404
-ex: http://localhost:8080/myretail/api/v1/products/1234
+* If the product is not found then the request returns a 404 - http://localhost:8080/myretail/api/v1/products/1234
 response: 
 * ```{"id":"970693b9-4154-430b-872e-50e69d7ade59","message":"The product: 1234 is not found"}```
