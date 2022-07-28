@@ -7,13 +7,15 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
+
 @Data
 @JsonRootName("current_price")
 @JsonPropertyOrder({"value", "currency_code"})
 @NoArgsConstructor
 @AllArgsConstructor
 public class CurrentPriceDTO {
-    Float value;
+    BigDecimal value;
     @JsonProperty("currency_code")
     String currencyCode;
 }
