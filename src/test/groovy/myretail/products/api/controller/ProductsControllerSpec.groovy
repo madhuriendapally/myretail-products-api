@@ -1,4 +1,4 @@
-package myretail.products.api.demo.controller
+package myretail.products.api.controller
 
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc
@@ -24,11 +24,4 @@ class ProductsControllerSpec extends Specification {
                 .response
     }
 
-    def "when '/api/v1/products/' is invoked it should return a  200 with product details"() {
-        expect: "Status is 200 and the returns product details"
-        mvc.perform(get("/api/v1/products/"))
-                .andExpect(status().isOk())
-                .andReturn()
-                .response
-    }
 }

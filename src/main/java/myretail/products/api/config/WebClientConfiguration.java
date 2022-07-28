@@ -1,4 +1,4 @@
-package myretail.products.api.demo.config;
+package myretail.products.api.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

@@ -1,4 +1,4 @@
-package myretail.products.api.demo.controller;
+package myretail.products.api.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

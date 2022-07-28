@@ -1,4 +1,4 @@
-package myretail.products.api.demo.controller
+package myretail.products.api.controller
 
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc

@@ -1,10 +1,10 @@
-package myretail.products.api.demo.domain;
+package myretail.products.api.domain;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
 
 @Data
 @AllArgsConstructor
@@ -12,6 +12,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(value = "current_price")
 public class CurrentPrice {
     float value;
-    @JsonProperty("currency_code")
+    @Field("currency_code")
     String currencyCode;
 }

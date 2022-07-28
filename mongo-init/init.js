@@ -23,4 +23,12 @@ db.products.insertMany([
             currency_code: 'USD'
         }
     },
+
+    {
+        _id: 13860428,
+        current_price: {
+            value: 138.56,
+            currency_code: 'USD'
+        }
+    },
 ]);

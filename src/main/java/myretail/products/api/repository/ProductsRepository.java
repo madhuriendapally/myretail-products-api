@@ -1,6 +1,6 @@
-package myretail.products.api.demo.repository;
+package myretail.products.api.repository;
 
-import myretail.products.api.demo.domain.Products;
+import myretail.products.api.domain.Products;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 public interface ProductsRepository extends MongoRepository<Products, Long> {

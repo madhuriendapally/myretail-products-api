@@ -1,9 +1,9 @@
-package myretail.products.api.demo
+package myretail.products.api
 
-import myretail.products.api.demo.controller.HomeController
-import myretail.products.api.demo.controller.ProductsController
-import myretail.products.api.demo.service.ProductsService
-import myretail.products.api.demo.service.RedSkyIntegrationService
+import myretail.products.api.controller.HomeController
+import myretail.products.api.controller.ProductsController
+import myretail.products.api.service.ProductDBIntegrationService
+import myretail.products.api.service.RedskyIntegrationService
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 import spock.lang.Specification
@@ -18,10 +18,10 @@ class LoadContextSpec extends Specification {
     private ProductsController productsController
 
     @Autowired
-    private ProductsService productsService
+    private ProductDBIntegrationService productsService
 
     @Autowired
-    private RedSkyIntegrationService redSkyIntegrationService
+    private RedskyIntegrationService redSkyIntegrationService
 
     def "when context is loaded then all expected beans are created"() {
         expect: "the homeController is created"
